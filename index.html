@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>task-css-2</title>
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <div id="sidebar">
+        <div id="up">
+          <div id="logo">
+            <span id="circle"></span>
+            <span id="text">مدار</span>
+          </div>
+          <a href=""><i class="fa-solid fa-border-all"></i>داشبورد</a>
+          <br />
+          <a href=""><i class="fa-sharp fa-regular fa-folder"></i>پروژه ها</a>
+          <br />
+          <a href=""><i class="fa-regular fa-square-check"></i>وظایف</a>
+          <br />
+          <a href=""><i class="fa-solid fa-user-group"></i>تیم</a>
+          <br />
+          <a href=""><i class="fa-solid fa-gear"></i>تنظیمات</a>
+          <br />
+        </div>
+        <div id="down">
+          <img src="./assets/images/image 1.jpeg" id="image" alt="male" />
+          <div id="text">
+            <h5>علی محمدی </h5>
+            <h6>مدیر محصول</h6>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+   <main>
+      <div id="title">
+        <div id="proje">
+          <h2>داشبورد پروژه ها</h2>
+          <p>نگاهی کلی به وضعیت پروژه ها،وظایف و عملکرد تیم شما</p>
+        </div>
+        <div id="form">
+          <form action="">
+            <div id="search">
+              <input type="search" placeholder=" جست و جو" />
+              <i class="fa-brands fa-sistrix"></i>
+            </div>
+            <div id="plus">
+              <button><span>+</span>پروژه جدید</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="cards">
+        <div id="card1">
+        <h5>پروژه های فعال</h5>
+        <span><i class="fa-solid fa-user-group"></i></span>
+        <h2>۲۴</h2>
+        <p>۱۴%↑</p>
+        </div>
+        
+        <div id="card2">
+           <h5>کل وظایف</h5>
+        <span><i class="fa-solid fa-list-ul"></i></span>
+        <h2>۱۲۸</h2>
+        <p>۸%↑</p>
+        </div>
+
+        <div id="card3">
+           <h5>وظایف باز</h5>
+        <span><i class="fa-jelly fa-regular fa-clock"></i></span>
+        <h2>۸</h2>
+        <p>↑۱۲%</p>
+        </div>
+
+        <div id="card4">
+          <h5>پروژه های تکمیل شده</h5>
+          <span><i class="fa-regular fa-circle-check"></i></span>
+          <h2>۱۶</h2>
+          <p>۲۵%</p>
+        </div>
+
+      </div>
+
+      <div id="pro-section">
+        <div id="right-section">
+          <div id="part1">
+             <h4>پروژه های فعال</h4>
+           <div id="pro-filter">
+            <span id="filter-btn active" style="background-color: #9899e7; color: #ffff; width: 60px; border-radius: 10px; display: flex; align-items: center;justify-content: center;height: 40px;"> همه</span>
+            <span id="filter-btn">در حال انجام</span>
+            <span id="filter-btn">در انتظار</span>
+            <span id="filter-btn">تکمیل شده</span>
+           </div>
+          </div>
+      
+          <div id="part2">
+            <h5>پروژه</h5>
+           <span class="member" >اعضا</span>
+           <span class="member" >وضعیت</span>
+           <span class="member" >پیشرفت</span>
+           <span class="member">تاریخ پایان</span>
+          </div>
+          <div id="part3">
+            <div id="case1">
+              <span><i class="fa-solid fa-window-maximize"></i></span>
+              <h5>طراحی وب سایت</h5>
+              <span>طراحی و توسعه وب سایت شرکتی</span>
+              <img src="./assets/images/female.jpeg" alt="">
+              <img src="./assets/images/image 1.jpeg" alt="">
+              <img src="./assets/images/WhatsApp Image 2026-10-15 at 07.08.08.jpeg" alt="">
+              <p id="three">+3</p>
+              <span>درحال انحام</span>
+              <span></span>
+              <span>۷۵٪</span>
+              <span>۲۵/۰۳/۱۴۰۴</span>
+              <span id="option"></span>
+            </div>
+           
+             <div id="case2">
+              <span><i class="fa-solid fa-mobile-screen"></i></span>
+              <h5>اپلیکیشن فرودگاه</h5>
+              <span>توسعه اپلیکیشن موبایل فروشگاه</span>
+              <img src="./assets/images/female.jpeg" alt="">
+              <img src="./assets/images/image 1.jpeg" alt="">
+              <img src="./assets/images/WhatsApp Image 2026-10-15 at 07.08.08.jpeg" alt="">
+              <p id="three">+۲</p>
+              <span>در انتظار</span>
+              <span></span>
+              <span>۴۰٪</span>
+              <span>۱۰/۰۳/۱۴۰۴</span>
+              <span id="option"></span>
+            </div>
+
+             <div id="case3">
+              <span style="padding-top: 5px;"><i class="fa-solid fa-gear"></i></span>
+              <h5>پنل مدیریت</h5>
+              <span>طراحی پنل مدیریت سامانه</span>
+              <img src="./assets/images/female.jpeg" alt="">
+              <img src="./assets/images/image 1.jpeg" alt="">
+              <img src="./assets/images/WhatsApp Image 2026-10-15 at 07.08.08.jpeg" alt="">
+              <p id="three">+۴</p>
+              <span>تکمیل شده</span>
+              <span></span>
+              <span>۱۰۰٪</span>
+              <span>۲۰/۰۱/۱۴۰۴</span>
+              <span id="option"></span>
+            </div>
+          </div>
+        </div>
+      
+       
+       <div id="left-section">
+          <div id="activity">
+           <h4>فعالیت های اخیر</h4>
+           <p> نمایش همه</p>
+          </div>
+        <div id="show">
+          <div id="line"></div>
+            <section id="show1">
+              <p><span>سارا احمدی </span>وظیفه جدیدی ایحاد کرد</p>
+              <p>طراحی صفحه ورود</p>
+              <p>۱۰دقیقه پیش</p>
+              <div id="dot1"></div>
+              <img src="./assets/images/female.jpeg" alt="female">
+            </section>
+
+            <section id="show2">
+              <p><span>محمد رضایی </span>وضعیت پروزه را تغییر داد</p>
+              <p>اپلیکیشن فروشگاه</p>
+              <p>۱ ساعت پیش</p>
+              <div id="dot2"></div>
+              <img src="./assets/images/image 1.jpeg" alt="male">
+            </section>
+
+            <section id="show3">
+              <p><span>نگین کریمی </span>فایل را آپلود کرد</p>
+              <p>مستندات طراحی رابط کاربری</p>
+              <p>۳ ساعت پیش</p>
+              <div id="dot3"></div>
+              <img src="./assets/images/WhatsApp Image 2026-10-15 at 07.08.08.jpeg" alt="female">
+            </section>
+         </div>
+       </div>
+     </div>
+   </main>
+  </div>
+  
+</body>
+
+</html>
