@@ -5,16 +5,19 @@ body{
     overflow: hidden;
     
 }
+#menu-icon{
+    display: none;
+}
 
 #container{
     display: flex;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     direction: rtl;
     background-color: rgb(225, 235, 235);
     
 }
-#sidebar{
+#sidbar{
     height:100vh;
     width: 150px;
     background-color: black;
@@ -118,12 +121,15 @@ main{
     position: relative;
     display: inline-block;
     font-weight: bold;
+    
 }
+
 #plus span{
     position: absolute;
     right: 10px;
     bottom: 5px;
     font-size: 15px;
+    cursor: pointer;
 }
 #form button{
     background-color: rgb(89, 28, 146);
@@ -152,7 +158,8 @@ main{
     width:100%;
     height: 130px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    margin-top: 5px;
     align-items: center;
     gap: 14px;
     
@@ -164,6 +171,12 @@ main{
     background-color: whitesmoke;
     border-radius: 15px;
     padding: 15px;
+    cursor: pointer;
+}
+
+#card1:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    background-color: rgb(210, 194, 194);
 }
 #card1 span{
     width: 30px;
@@ -172,11 +185,14 @@ main{
     border-radius: 50%;
     position: absolute;
     left: 15px;
-    color: blueviolet;
+    color: rgb(179, 140, 215);
     display: flex;
     justify-content: center;
     align-items: center;
 
+}
+#card1 span i{
+    padding-left: 8px;
 }
 #card1 p{
     width: 50px;
@@ -194,6 +210,11 @@ main{
     background-color: whitesmoke;
     border-radius: 15px;
     padding: 15px;
+    cursor: pointer;
+}
+#card2:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    background-color: rgb(223, 207, 207);
 }
 #card2 span{
     width: 30px;
@@ -202,11 +223,13 @@ main{
     border-radius: 50%;
     position: absolute;
     right: 780px;
-    color: blueviolet;
+    color: rgb(161, 110, 209);
     display: flex;
     justify-content: center;
     align-items: center;
-
+}
+#card2 span i{
+    padding-left: 8px;
 }
 #card2 p{
     width: 50px;
@@ -225,19 +248,26 @@ main{
     background-color: whitesmoke;
     border-radius: 15px;
     padding: 15px;
+    cursor: pointer;
+}#card3:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    background-color: rgb(215, 200, 200);
 }
+
 #card3 span{
     width: 30px;
     height: 30px;
-    background-color: rgb(231, 177, 177);
+    background-color: rgb(209, 143, 143);
     border-radius: 50%;
     position: absolute;
     left: 380px;
-    color:rgb(220, 117, 117);
+    color:rgb(200, 84, 84);
     display: flex;
     justify-content: center;
     align-items: center;
-
+}
+#card3 span i{
+    padding-left: 8px;
 }
 
 #card3 p{
@@ -261,16 +291,20 @@ main{
 #card4 span{
     width: 30px;
     height: 30px;
-    background-color: rgb(110, 158, 110);
+    background-color: rgb(153, 181, 153);
     border-radius: 50%;
     position: absolute;
-    left: 50px;
-    color:rgb(133, 225, 133);
+    left: 40px;
+    color:rgb(174, 211, 174);
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
+#card4 span i{
+    padding-left: 8px;
+}
+
 #card4 p{
     width: 50px;
     height: 20px;
@@ -278,11 +312,14 @@ main{
     color:rgb(133, 225, 133);
     border-radius: 6px;
     position: absolute;
-    left: 60px;
+    left: 45px;
     top: 190px;
-    
-    
+} 
+#card4:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    background-color: rgb(234, 224, 224);
 }
+
 #pro-section{
     width: 100%;
     height: 450px;
@@ -347,6 +384,7 @@ main{
 #part2 h5{
     margin-right: 0px;
 }
+
 #part3{
     width: 100%;
     height: 370px;
@@ -354,13 +392,19 @@ main{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    cursor: pointer;
 }
 #case1{
     width: 100%;
     height: 118px;
     display: flex;
     flex-direction: row;
-    
+    margin-top: 18px;
+    border-bottom: solid 1px  rgb(222, 242, 242);
+}
+#case1:hover,#case2:hover,#case3:hover{
+transform: translateY(-2px);
+box-shadow: 0 7px 12px rgba(0,0,0,0.12);
 }
 
 #case2{
@@ -368,56 +412,181 @@ main{
     height: 118px;
     display: flex;
     flex-direction: row;
+    border-bottom: solid rgb(222, 242, 242);
 }
 #case3{
     width: 100%;
     height: 118px;
     display: flex;
     flex-direction: row;
+    border-bottom:solid rgb(222, 242, 242);
 }
 #part3 img{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
 }
 #three{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    background-color: rgb(192, 189, 189);
+    background-color: rgb(227, 223, 223);
+    font-weight:bold;
+    text-align: center;
 }
 #part3 i{
     width: 35px;
     height: 35px;
-    background-color: plum;
+    background-color: rgb(230, 198, 230);
     color: purple;
-    border-radius: 50%;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items:center ;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+span i{
+    display: inline-block;
+    margin-right: 10px;
+}
+#part3-text h5{
+    margin-bottom: 2px;
+    margin-top: 12px;
+}
+#part3-text span{
+    color: rgb(158, 158, 158);
+    font-size: 13px;
+}
+#images{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-right: 5px;
+    padding-top: 25px;
+}
+#img1{
+    position: absolute;
+    right: 25px;
+    bottom: 71px;
+}
+#img2{
+    position: absolute;
+    right: 45px;
+}
+#img3{
+    position: absolute;
+    right: 65px;
+}
+#three{
+    position: absolute;
+    bottom: 52px;
+    right: 1px;
 }
 
+#todo{
+    width: 110px;
+    height: 30px;
+    background-color: #acf7bd;
+    color: #10b981;
+    border-radius: 20px;
+    display:inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 6px 12px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+#todo span{
+    display: inline-block;
+    background-color: #10b981;
+    color: #10b981;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin-left: 3px;
 
+}
+#percent1{
+    width: 135px;
+    height: 21px;
+    background-color:purple;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-top: 32px;
+    margin-right: 20px;
+}
+#percent2{
+    width: 135px;
+    height: 21px;
+    background-color:purple;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-top: 32px;
+    margin-right: 20px;
+    
+}
+#percent3{
+    width: 135px;
+    height: 21px;
+    background-color:purple;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-top: 32px;
+    margin-right: 20px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+#percent1 #part-first{
+    height: 21px;
+    width: 25px;
+    text-align: right;
+    background-color:rgb(222, 242, 242);
+    border-radius: 10px;
+}
+#percent2 #part-first{
+    height: 21px;
+    width: 60px;
+    text-align: right;
+    background-color:rgb(222, 242, 242);
+    border-radius: 10px;
+}
+#percent3 #part-first{
+    height: 21px;
+    width: 0px;
+    text-align: right;
+}
+#number{
+    height: 50px;
+    width: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px;
+    padding:17px ;
+}
+#date{
+    height: 50px;
+    width: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+    padding:17px ;
+}
+#option{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#option i{
+width: 50px;
+height: 52px;
+min-width: 50px;
+flex-shrink: 0;
+display: inline-block;
+color: black;
+background-color: whitesmoke;
+   
+}
 
 
 #left-section{
@@ -427,6 +596,10 @@ main{
     border-radius: 10px;
     padding-right: 20px;
 }
+#left-section:hover{
+    transform: translateY(-3);
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.15);
+}
 #activity{
     display: flex;
     justify-content: space-around;
@@ -435,21 +608,22 @@ main{
 }
 #activity p{
     color: purple;
+    font-size: 17px;
 }
 #show{
    display: flex;
    flex-direction: column;
    gap: 5px;
    color: rgb(57, 56, 56);
-   position: static;
+   position:static;
 }
 #line{
 position: absolute;
-left: 64px;
+left: 43px;
 bottom: 40px;
 width: 0px;
-height: 350px;
-border: solid 2px gray;
+height: 357px;
+border: solid 2px rgb(226, 219, 219);
 font-weight: bold;
 }
 #show span{
@@ -459,19 +633,15 @@ font-weight: bold;
    width: 100%;
    height: 135px;
 }
-#show1 img{
-   position: absolute;
-   left: 80px;
-   bottom: 380px;
-}
+
 #dot1{
 width: 10px;
 height: 10px;
 border-radius: 50%;
 background-color: #7541f8;
 position: absolute;
-left: 60px;
-bottom: 380px;
+left: 40px;
+bottom: 360px;
 }
 #dot2{
 width: 10px;
@@ -479,8 +649,8 @@ height: 10px;
 border-radius: 50%;
 background-color:#10b981;
 position: absolute;
-left: 60px;
-bottom: 250px;
+left: 40px;
+bottom: 210px;
 }
 #dot3{
 width: 10px;
@@ -488,8 +658,8 @@ height: 10px;
 border-radius: 50%;
 background-color: #94a3b8;
 position: absolute;
-left: 60px;
-bottom: 115px;
+left: 40px;
+bottom: 105px;
 }
 
 
@@ -498,11 +668,15 @@ bottom: 115px;
    height: 135px;
    
 }
+#show1 img{
+   position: absolute;
+   left: 50px;
+   bottom: 360px;
+}
 #show2 img{
     position: absolute;
-    left: 80px;
-    top: 460px;
-
+    left: 50px;
+    top: 502px;
 }
 #show3{
     width: 100%;
@@ -510,8 +684,8 @@ bottom: 115px;
 }
 #show3 img{
     position: absolute;
-    bottom: 110px;
-    left: 80px;
+    bottom: 100px;
+    left: 50px;
 }
 #show img{
   width: 25px;
@@ -521,4 +695,164 @@ bottom: 115px;
 #show span{
     font-weight: bold;
 }
-   
+
+/* ==================== ریسپانسیو ==================== */
+
+@media (max-width: 1100px) {
+
+  
+  #container {
+    flex-direction: column !important;
+  }
+
+  #sidebar {
+    width: 100% !important;
+    height: auto !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 12px 20px !important;
+    border-radius: 0 !important;
+  }
+  #menu-icon{
+    display: none;
+  }
+
+  #sidebar #up {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  #sidebar br {
+    display: none !important;
+  }
+
+  #up a {
+    margin: 0 !important;
+  }
+
+  /* main */
+  main {
+    width: 100% !important;
+    height: auto !important;
+    padding: 15px !important;
+  }
+
+  /* کارت‌ها */
+  #cards {
+    height: auto !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 12px !important;
+  }
+
+  #card1, #card2, #card3, #card4 {
+    width: 46% !important;
+    height: auto !important;
+    min-height: 120px;
+    position: relative !important;
+  }
+
+  #card1 span, #card2 span, #card3 span, #card4 span,
+  #card1 p, #card2 p, #card3 p, #card4 p {
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    margin: 8px 0 !important;
+  }
+
+  /* بخش پروژه‌ها */
+  #pro-section {
+    height: auto !important;
+    flex-direction: column !important;
+  }
+
+  #right-section,
+  #left-section {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  #pro-filter {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+
+  #part2 {
+    width: 100% !important;
+  }
+
+
+  #line {
+    display: none !important; /* خط عمودی رو مخفی کن */
+  }
+
+  #dot1, #dot2, #dot3 {
+    position: static !important;
+    left: auto !important;
+    bottom: auto !important;
+    margin: 5px 0 !important;
+  }
+
+  #show1 img,
+  #show2 img,
+  #show3 img,
+  #show1 img,
+  #show img {
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    margin: 5px 0 !important;
+  }
+
+  #show1, #show2, #show3 {
+    height: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  html,body{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: auto;
+  }
+
+  #sidbar{
+    display: none;
+  }
+  #menu-icon{
+    display: block;
+    font-size: 30px;
+    padding: 15px;
+    cursor: pointer;
+    background-color:purple;
+    color: whitesmoke;
+    width: max-content;
+    margin: 10px;
+    border-radius: 5px;    
+  }
+  
+  #card1, #card2, #card3, #card4{
+    width: 100%;
+  }
+  #form{
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #search, #plus{
+  width: 100%;
+  }
+  #form button{
+    width: 100%;
+  }
+  #title{
+    flex-direction: column;
+    height: auto;
+  }
+}
+  
