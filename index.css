@@ -700,19 +700,18 @@ bottom: 105px;
 
 @media (max-width: 1100px) {
 
-  
   #container {
-    flex-direction: column !important;
+    flex-direction: column ;
   }
 
   #sidebar {
-    width: 100% !important;
-    height: auto !important;
-    flex-direction: row !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    padding: 12px 20px !important;
-    border-radius: 0 !important;
+    width: 100% ;
+    height: auto ;
+    flex-direction: row;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 12px 20px ;
+    border-radius: 0 ;
   }
   #menu-icon{
     display: none;
@@ -725,76 +724,71 @@ bottom: 105px;
   }
 
   #sidebar br {
-    display: none !important;
+    display: none;
   }
 
   #up a {
-    margin: 0 !important;
+    margin: 0;
   }
-
-  /* main */
   main {
-    width: 100% !important;
-    height: auto !important;
-    padding: 15px !important;
+    width: 100%;
+    height: auto;
+    padding: 15px;
   }
 
-  /* کارت‌ها */
   #cards {
-    height: auto !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    gap: 12px !important;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
   }
 
   #card1, #card2, #card3, #card4 {
-    width: 46% !important;
-    height: auto !important;
+    width: 46%;
+    height: auto;
     min-height: 120px;
-    position: relative !important;
+    position: relative;
   }
 
   #card1 span, #card2 span, #card3 span, #card4 span,
   #card1 p, #card2 p, #card3 p, #card4 p {
-    position: static !important;
-    left: auto !important;
-    right: auto !important;
-    top: auto !important;
-    bottom: auto !important;
-    margin: 8px 0 !important;
+    position: static;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    margin: 8px 0;
   }
-
-  /* بخش پروژه‌ها */
   #pro-section {
-    height: auto !important;
-    flex-direction: column !important;
+    height: auto;
+    flex-direction: column;
   }
 
   #right-section,
   #left-section {
-    width: 100% !important;
-    height: auto !important;
+    width: 100%;
+    height: auto;
   }
 
   #pro-filter {
-    width: 100% !important;
-    margin-right: 0 !important;
+    width: 100%;
+    margin-right: 0;
   }
 
   #part2 {
-    width: 100% !important;
+    width: 100%;
   }
 
 
   #line {
-    display: none !important; /* خط عمودی رو مخفی کن */
+    display: none; 
   }
 
   #dot1, #dot2, #dot3 {
-    position: static !important;
-    left: auto !important;
-    bottom: auto !important;
-    margin: 5px 0 !important;
+    position: static;
+    left: auto;
+    bottom: auto;
+    margin: 5px 0;
   }
 
   #show1 img,
@@ -802,16 +796,16 @@ bottom: 105px;
   #show3 img,
   #show1 img,
   #show img {
-    position: static !important;
-    left: auto !important;
-    right: auto !important;
-    top: auto !important;
-    bottom: auto !important;
-    margin: 5px 0 !important;
+    position: static;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    margin: 5px 0 ;
   }
 
   #show1, #show2, #show3 {
-    height: auto !important;
+    height: auto;
   }
 }
 
