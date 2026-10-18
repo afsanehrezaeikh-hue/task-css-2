@@ -744,7 +744,7 @@ bottom: 105px;
     flex-direction: column ;
   }
 
-  #sidebar {
+  #sidbar {
     width: 100% ;
     height: auto ;
     flex-direction: row;
@@ -757,13 +757,13 @@ bottom: 105px;
     display: none;
   }
 
-  #sidebar #up {
+  #sidbar #up {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
   }
 
-  #sidebar br {
+  #sidbar br {
     display: none;
   }
 
