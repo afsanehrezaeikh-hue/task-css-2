@@ -108,6 +108,7 @@ main{
     margin-bottom: 20px;
 
 }
+
 #proje p{
     margin-top: 0px;
 }
@@ -371,20 +372,14 @@ main{
     
 }
 #part2{
-    width: 95%;
+    width: 90%;
     height: 18px;
     padding: 15px;
     display: flex;
     justify-content: space-between;
-   background-color:  rgb(222, 242, 242);
-   align-items: center;
-   border-radius: 15px;
-   
+    background-color:  rgb(222, 242, 242);
+    border-radius: 15px;  
 }
-#part2 h5{
-    margin-right: 0px;
-}
-
 #part3{
     width: 100%;
     height: 370px;
@@ -393,7 +388,9 @@ main{
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
+    position: relative;
 }
+
 #case1{
     width: 100%;
     height: 118px;
@@ -401,6 +398,7 @@ main{
     flex-direction: row;
     margin-top: 18px;
     border-bottom: solid 1px  rgb(222, 242, 242);
+    border-radius: 10px;
 }
 #case1:hover,#case2:hover,#case3:hover{
 transform: translateY(-2px);
@@ -413,6 +411,7 @@ box-shadow: 0 7px 12px rgba(0,0,0,0.12);
     display: flex;
     flex-direction: row;
     border-bottom: solid rgb(222, 242, 242);
+    border-radius: 10px;
 }
 #case3{
     width: 100%;
@@ -420,19 +419,12 @@ box-shadow: 0 7px 12px rgba(0,0,0,0.12);
     display: flex;
     flex-direction: row;
     border-bottom:solid rgb(222, 242, 242);
+    border-radius: 10px;
 }
 #part3 img{
     width: 30px;
     height: 30px;
     border-radius: 50%;
-}
-#three{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: rgb(227, 223, 223);
-    font-weight:bold;
-    text-align: center;
 }
 #part3 i{
     width: 35px;
@@ -451,6 +443,9 @@ span i{
     display: inline-block;
     margin-right: 10px;
 }
+#part3-text{
+    flex-shrink: 0;
+}
 #part3-text h5{
     margin-bottom: 2px;
     margin-top: 12px;
@@ -460,7 +455,7 @@ span i{
     font-size: 13px;
 }
 #images{
-    width: 100px;
+    width: 110px;
     height: 100px;
     position: relative;
     margin-right: 5px;
@@ -483,6 +478,17 @@ span i{
     position: absolute;
     bottom: 52px;
     right: 1px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(227, 223, 223);
+    font-weight:bold;
+    text-align: center;
+}
+#cases-to1, #cases-to2, #cases-to3{
+   display: flex;
+  flex-direction: row;
+  gap: 60px;
 }
 
 #todo{
@@ -491,70 +497,73 @@ span i{
     background-color: #acf7bd;
     color: #10b981;
     border-radius: 20px;
-    display:inline-flex;
+    display:flex;
     align-items: center;
     gap: 7px;
     padding: 6px 12px;
-    margin-top: 20px;
-    margin-right: 10px;
+    margin-top: 19px;
 }
 #todo span{
-    display: inline-block;
+    display:flex;
+    align-items: center;
     background-color: #10b981;
     color: #10b981;
     border-radius: 50%;
     width: 8px;
     height: 8px;
     margin-left: 3px;
+}
+
+   #percents1, #percents2, #percents3{
+    width: 135px;
+    height: 21px;
+    background-color:rgb(193, 225, 225);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    margin: 27px;
+}
+#percents1 #percent1{
+    width: 105px;
+    height: 21px;
+    background-color: #7541f8;
+    border-radius: 12px;
+}
+#percents1 #percent2{
+   width: 35px;
+   height: 21px;
+   background-color: rgb(193, 225, 225);
+   border-radius: 10px;
+   
+}
+
+#percents2 #percent1{
+ width: 60px;
+ height: 21px;
+ background-color: #7541f8;
+ border-radius: 10px
+}
+
+#percents2 #percent2{
+width: 75px;
+height: 21px;
+background-color: rgb(193, 225, 225);
+border-radius: 10px;
+}
+  
+
+#percents3 #percent1{
+    background-color: #7541f8;
+    width: 135px;
+    height: 21px;
+    border-radius: 10px;
 
 }
-#percent1{
-    width: 135px;
-    height: 21px;
-    background-color:purple;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    margin-top: 32px;
-    margin-right: 20px;
-}
-#percent2{
-    width: 135px;
-    height: 21px;
-    background-color:purple;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    margin-top: 32px;
-    margin-right: 20px;
-    
-}
-#percent3{
-    width: 135px;
-    height: 21px;
-    background-color:purple;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    margin-top: 32px;
-    margin-right: 20px;
-
-}
-#percent1 #part-first{
-    height: 21px;
-    width: 25px;
-    text-align: right;
-    background-color:rgb(222, 242, 242);
-    border-radius: 10px;
-}
-#percent2 #part-first{
-    height: 21px;
-    width: 60px;
-    text-align: right;
-    background-color:rgb(222, 242, 242);
-    border-radius: 10px;
-}
-#percent3 #part-first{
-    height: 21px;
+#percents3 #percent2{
     width: 0px;
-    text-align: right;
+    height: 21px;
+    background-color: rgb(193, 225, 225);
+    border-radius: 10px;
 }
 #number{
     height: 50px;
@@ -820,19 +829,24 @@ bottom: 105px;
     display: none;
   }
   #menu-icon{
-    display: block;
-    font-size: 30px;
+    display:inline-block;
+    font-size: 20px;
     padding: 15px;
     cursor: pointer;
-    background-color:purple;
+    background-color:rgb(168, 87, 168);
     color: whitesmoke;
-    width: max-content;
-    margin: 10px;
-    border-radius: 5px;    
+    width: 30px;
+    margin-right: 400px;
+    border-radius: 10px;   
   }
-  
+  #cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
   #card1, #card2, #card3, #card4{
-    width: 100%;
+    flex: 11 calc(50% - 10px);
+    box-sizing: border-box;
   }
   #form{
     flex-direction: column;
@@ -841,6 +855,12 @@ bottom: 105px;
   #search, #plus{
   width: 100%;
   }
+  #search input{
+    width: 100%;
+  }
+  #search i{
+    left: 20px;
+  }
   #form button{
     width: 100%;
   }
@@ -848,5 +868,43 @@ bottom: 105px;
     flex-direction: column;
     height: auto;
   }
+  #case1, #case2, #case3{
+    flex: 0 0 259px;
+  }
+
+  #images{
+    width: 100%;
+  }
+  #case1{
+  }
+  #left-section #show{
+    text-align: center;
+  }
+  #show #dot1, #dot2, #dot3{
+    display:none;
+  }
+  #part3{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px;
+    position: relative;
+  }
+  #cases-to1, #cases-to2, #cases-to3{
+   display: flex;
+  flex-direction: row;
+  gap: 60px;
 }
-  
+}
+
+  /*
+  #part3-text h5{
+    margin-bottom: 2px;
+    margin-top: 12px;
+}
+#part3-text span{
+    color: rgb(158, 158, 158);
+    font-size: 13px;
+}
+  */
