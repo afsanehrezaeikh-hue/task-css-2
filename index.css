@@ -906,8 +906,6 @@ bottom: 105px;
   #images{
     width: 100%;
   }
-  #case1{
-  }
   #left-section #show{
     text-align: center;
   }
@@ -928,14 +926,3 @@ bottom: 105px;
   gap: 60px;
 }
 }
-
-  /*
-  #part3-text h5{
-    margin-bottom: 2px;
-    margin-top: 12px;
-}
-#part3-text span{
-    color: rgb(158, 158, 158);
-    font-size: 13px;
-}
-  */
