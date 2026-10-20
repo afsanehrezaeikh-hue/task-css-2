@@ -114,7 +114,7 @@ main{
     justify-content: space-around;
     align-items: center;
     gap: 20px;
-    width: 100px;
+    width: 100%;
     height: 10px;
     margin-bottom: 45px;
     margin-top: 10px;
@@ -127,10 +127,10 @@ main{
   padding: 7px;
 }
 #proje h2{
-  margin: 20px;
+  
 }
 #proje p{
-    padding-bottom: 80px
+    
 }
 #form{
     display: flex;
@@ -895,44 +895,53 @@ bottom: 105px;
     display: none;
   }
   #menu-icon{
-    display:inline-block;
+    display:flex;
     font-size: 20px;
     padding: 15px;
     cursor: pointer;
     background-color:rgb(168, 87, 168);
     color: whitesmoke;
     width: 30px;
-    margin-right: 400px;
+    margin-right: 500px;
     border-radius: 10px;   
   }
   #cards{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: -100px;
   }
   #card1, #card2, #card3, #card4{
     flex: 11 calc(50% - 10px);
     box-sizing: border-box;
   }
   #form{
-    flex-direction: column;
-    align-items: stretch;
-  }
-  #search, #plus{
-  width: 100%;
+  margin: 0px;
   }
   #search input{
-    width: 100%;
+    width: 450px;
+    margin-right: 50px;
+    margin-left:30px;
+    margin-bottom: 70px;
   }
   #search i{
-    left: 20px;
+    left: 40px;
   }
   #form button{
     width: 100%;
   }
   #title{
+    display: flex;
     flex-direction: column;
     height: auto;
+    width: 300px;
+  }
+  #proje-text{
+    width: 400px;
+    height: 200px;
+    margin-right: 120px;
+    margin-bottom: -70px;
+
   }
   #case1, #case2, #case3{
     flex: 0 0 259px;
@@ -958,6 +967,9 @@ bottom: 105px;
   white-space: nowrap;
 }
 #plus{
+    display: none;
+}
+#left-section{
     display: none;
 }
 }
