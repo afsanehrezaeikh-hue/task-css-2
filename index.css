@@ -1,19 +1,22 @@
+
 @font-face {
-  font-family: 'Vazir';
-  src: url('Vazir.woff2') format('woff2'),
-       url('Vazir.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Vazirmatn';
+    src: url('./assets/fonts/Vazirmatn-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body{
-    font-family:'Vazir' , sans-serif ;
+    font-family:'Vazirmatn' , sans-serif ;
     margin: 0px;
     overflow: hidden;
+    font-feature-settings: "ss01";
     
 }
 #menu-icon{
     display: none;
+
+
 }
 
 #container{
@@ -36,6 +39,9 @@ body{
     border-radius: 10px;
     box-sizing: border-box;
 }
+#sidbar a{
+    cursor: pointer;
+}
 #logo{
     display: flex;
     align-items: center;
@@ -44,7 +50,7 @@ body{
 #circle{
     width: 25px;
     height: 25px;
-    border: 10px solid purple;
+    border: 15px solid purple;
     border-radius: 50%;
 }
 #text{
@@ -54,7 +60,7 @@ body{
 }
 #up a{
     text-decoration: none;
-    display: block;
+    display: flex;
     margin-top: 30px;
     margin-right: 10px;
     margin-bottom: 20px;
@@ -105,36 +111,43 @@ main{
 }
 #title{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 20px;
-    width: 100%;
-    height: 15px;
-    margin-bottom: 20px;
+    width: 100px;
+    height: 10px;
+    margin-bottom: 45px;
+    margin-top: 10px;
 
 }
-
+#proje-text{
+  width: 500px;
+  height: 100px;
+  margin: 15px;
+  padding: 7px;
+}
+#proje h2{
+  margin: 20px;
+}
 #proje p{
-    margin-top: 0px;
+    padding-bottom: 80px
 }
 #form{
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
-    direction: rtl;
+    gap: 12px;
+    width: 600px;
 }
 #plus{
     position: relative;
-    display: inline-block;
-    font-weight: bold;
-    
+    display: flex;
+   font-size: 18px;
+   width: 200px;
 }
 
 #plus span{
-    position: absolute;
-    right: 10px;
-    bottom: 5px;
-    font-size: 15px;
     cursor: pointer;
 }
 #form button{
@@ -143,16 +156,19 @@ main{
     padding: 8px 10px 8px 12px;
     border: none;
     color: whitesmoke;
-    width: 100px;
+    width: 100%;
 }
 #search{
     position: relative;
-    display: inline-block;
+    cursor: pointer;
+    width: 500px;
+    
 }
 #search input{
     border-radius: 10px;
     border:1px solid gainsboro;
-    padding: 8px 35px 8px 12px;
+    padding: 10px;
+    width: 100%;
 }
 #search i{
     position: absolute;
@@ -940,5 +956,8 @@ bottom: 105px;
   flex-direction: row;
   gap: 60px;
   white-space: nowrap;
+}
+#plus{
+    display: none;
 }
 }
